@@ -1,0 +1,1683 @@
+﻿<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rafael Corrêa",
+    "jobTitle": "Desenvolvedor Front-End",
+    "url": "https://rafaelcorrea.dev",
+    "sameAs": [
+      "https://github.com/Rafa-code0",
+      "https://www.linkedin.com/in/rafael-correa-silva/"
+    ]
+  }
+  </script>
+    <title>Rafael Corrêa | Desenvolvedor Front-End & UI/UX</title>
+    <meta
+      name="description"
+      content="Portfólio de Rafael Corrêa — Estudante de Ciência da Computação especializado em desenvolvimento front-end, UI/UX e interfaces modernas de alto nível."
+    />
+    <meta
+      name="keywords"
+      content="Rafael Corrêa, desenvolvedor web, front-end, UI/UX, HTML, CSS, JavaScript, Node.js, portfólio"
+    />
+    <meta name="author" content="Rafael Corrêa" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rafaelcorrea.dev" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Rafael Corrêa | Desenvolvedor Front-End"
+    />
+    <meta
+      property="og:description"
+      content="Interfaces premium, código limpo e experiências digitais que impressionam."
+    />
+    <meta property="og:url" content="https://rafaelcorrea.dev" />
+    <meta
+      property="og:image"
+      content="https://rafaelcorrea.dev/assets/img/og-preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rafael Corrêa | Desenvolvedor Front-End"
+    />
+    <meta
+      name="twitter:description"
+      content="Interfaces premium, código limpo e experiências digitais que impressionam."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23080810'/><text y='24' x='4' font-size='24' fill='%23C8A84B' font-family='serif' font-weight='bold'>R</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css">    
+  </head>
+
+  <body data-scroll="0">
+
+    <canvas
+      id="particleCanvas"
+      class="particle-canvas"
+      aria-hidden="true"
+    ></canvas>
+
+    <header class="navbar" id="navbar" role="banner">
+      <nav class="navbar__inner container" aria-label="Navegação principal">
+        <a
+          href="#hero"
+          class="navbar__logo"
+          aria-label="Rafael Corrêa — Início"
+        >
+          <span class="navbar__logo-mark">RC</span>
+          <span class="navbar__logo-dot"></span>
+        </a>
+
+        <ul class="navbar__links" role="list">
+          <li>
+            <a href="#about" class="navbar__link" aria-label="Sobre mim"
+              >Sobre</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="navbar__link" aria-label="Habilidades"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="navbar__link" aria-label="Projetos"
+              >Projetos</a
+            >
+          </li>
+          <li>
+            <a href="#journey" class="navbar__link" aria-label="Jornada"
+              >Jornada</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="navbar__link" aria-label="Contato"
+              >Contato</a
+            >
+          </li>
+          <li>
+            <a href="#certificados" class="navbar__link" aria-label="Certificados"
+              >Certificados</a
+            >
+          </li>
+        </ul>
+ 
+        <div class="navbar__actions">
+          <a
+            href="#contact"
+            class="btn btn--gold btn--sm"
+            aria-label="Entre em contato"
+          >
+            <span>Disponível</span>
+            <span class="btn__pulse"></span>
+          </a>
+          <button
+            class="navbar__hamburger"
+            id="hamburger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        class="mobile-menu"
+        id="mobileMenu"
+        role="dialog"
+        aria-label="Menu mobile"
+        aria-hidden="true"
+      >
+        <ul class="mobile-menu__links" role="list">
+          <li>
+            <a href="#about" class="mobile-menu__link" data-close-menu>Sobre</a>
+          </li>
+          <li>
+            <a href="#skills" class="mobile-menu__link" data-close-menu
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="mobile-menu__link" data-close-menu
+              >Projetos</a
+            >
+          </li>
+          <li>
+            <a href="#journey" class="mobile-menu__link" data-close-menu
+              >Jornada</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="mobile-menu__link" data-close-menu
+              >Contato</a
+            >
+          </li>
+          <li>
+            <a href="#certificados" class="mobile-menu__link" data-close-menu
+              >Certificados</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-menu__social">
+          <a
+            href="https://github.com/Rafa-code0"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            >GH</a
+          >
+          <a
+            href="https://www.linkedin.com/in/rafael-correa-silva/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            >LI</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="hero" class="hero section" aria-label="Apresentação">
+        <div class="hero__bg-grid" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <div
+            class="hero__badge reveal-fade-up"
+            aria-label="Status: disponível para projetos"
+          >
+            <span class="hero__badge-dot"></span>
+            <span class="font-mono">Disponível para projetos</span>
+          </div>
+
+          <h1 class="hero__title reveal-fade-up" style="--delay: 0.1s">
+            <span class="hero__title-line">Criando</span>
+            <span class="hero__title-line hero__title-line--gold"
+              >Experiências</span
+            >
+            <span class="hero__title-line">Digitais</span>
+            <span class="hero__title-line">Que Importam.</span>
+          </h1>
+
+          <p class="hero__subtitle reveal-fade-up" style="--delay: 0.3s">
+            Desenvolvedor Front-End & UI/UX — transformo ideias complexas<br />
+            em interfaces precisas, elegantes e memoráveis.
+          </p>
+
+          <div class="hero__cta reveal-fade-up" style="--delay: 0.45s">
+            <a
+              href="#projects"
+              class="btn btn--gold btn--lg magnetic"
+              aria-label="Ver meus projetos"
+            >
+              <span>Ver Projetos</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 8h10M9 4l4 4-4 4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="#contact"
+              class="btn btn--ghost btn--lg"
+              aria-label="Entrar em contato"
+              >Fale Comigo</a
+            >
+          </div>
+
+          <div
+            class="hero__meta reveal-fade-up"
+            style="--delay: 0.6s"
+            aria-label="Localização e formação"
+          >
+            <div class="hero__meta-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8 1.5A4.5 4.5 0 0113.5 6c0 3.5-5.5 8.5-5.5 8.5S2.5 9.5 2.5 6A4.5 4.5 0 018 1.5z"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                />
+                <circle
+                  cx="8"
+                  cy="6"
+                  r="1.5"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                />
+              </svg>
+              <span class="font-mono">Guimarânia, MG — Brasil</span>
+            </div>
+            <span class="hero__meta-divider" aria-hidden="true">·</span>
+            <div class="hero__meta-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="1.5"
+                  y="3"
+                  width="13"
+                  height="10"
+                  rx="1.5"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                />
+                <path d="M1.5 6h13" stroke="currentColor" stroke-width="1.3" />
+              </svg>
+              <span class="font-mono">Ciência da Computação</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hero__scroll-hint reveal-fade-up"
+          style="--delay: 0.8s"
+          aria-label="Scroll para baixo"
+        >
+          <div class="hero__scroll-line"></div>
+          <span class="font-mono">scroll</span>
+        </div>
+      </section>
+      <section id="about" class="about section" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-header reveal-fade-up">
+            <span class="section-label font-mono">01 / Sobre</span>
+            <h2 class="section-title" id="about-title">Quem sou eu</h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__visual reveal-fade-left">
+              <div class="about__avatar-wrap">
+                <div class="about__avatar" aria-label="Avatar de Rafael Corrêa">
+                  <div class="about__avatar-inner">
+                    <span class="about__avatar-initials">RC</span>
+                  </div>
+                  <div class="about__avatar-ring about__avatar-ring--1"></div>               
+                  <div class="about__avatar-ring about__avatar-ring--2"></div>
+                </div>
+                <div class="about__avatar-card glass-card">
+                  <span class="font-mono about__avatar-card-label">Status</span>
+                  <span class="about__avatar-card-value">
+                    <span class="pulse-dot"></span>Open to work
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__content reveal-fade-right">
+              <p class="about__lead">
+                Sou <strong>Rafael Corrêa</strong>, desenvolvedor front-end e
+                estudante de <strong>Ciência da Computação</strong>, apaixonado
+                por criar interfaces que combinam estética refinada com
+                performance técnica impecável.
+              </p>
+              <p class="about__body">
+                Minha jornada começou com a curiosidade de entender como as
+                melhores interfaces do mundo são construídas — e não parei desde
+                então. Tenho obsessão por detalhes visuais, tipografia precisa e
+                experiências que deixam uma marca real.
+              </p>
+              <p class="about__body">
+                Minha identidade mistura <em>design minimalista</em>,
+                <em>estética tecnológica</em>
+                e uma visão de que cada pixel precisa ter propósito. Busco
+                constantemente o equilíbrio perfeito entre o belo e o funcional.
+              </p>
+
+              <div class="about__values">
+                <div class="about__value-item">
+                  <span class="about__value-icon" aria-hidden="true">&rArr;</span>
+                  <div>
+                    <strong>Precisão Visual</strong>
+                    <p>Cada detalhe é intencional</p>
+                  </div>
+                </div>
+                <div class="about__value-item">
+                  <span class="about__value-icon" aria-hidden="true">&rArr;</span>
+                  <div>
+                    <strong>Evolução Constante</strong>
+                    <p>Sempre aprendendo, sempre melhorando</p>
+                  </div>
+                </div>
+                <div class="about__value-item">
+                  <span class="about__value-icon" aria-hidden="true">&rArr;</span>
+                  <div>
+                    <strong>Experiência Premium</strong>
+                    <p>Padrão de qualidade sem concessões</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about__cta-row">
+                <a
+                  href="mailto:rafael@email.com"
+                  class="btn btn--gold magnetic"
+                  aria-label="Enviar email para Rafael"
+                >
+                  <span>Entre em Contato</span>
+                </a>
+                <a
+                  href="https://github.com/Rafa-code0"
+                  class="btn btn--ghost"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Ver GitHub de Rafael"
+                >
+                  GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="skills section"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section-header reveal-fade-up">
+            <span class="section-label font-mono">02 / Habilidades</span>
+            <h2 class="section-title" id="skills-title">Stack Técnico</h2>
+            <p class="section-desc">
+              Tecnologias que domino e ferramentas com as quais construo
+              soluções reais.
+            </p>
+          </div>
+
+          <div class="skills__categories">
+            <!-- Front-End -->
+            <div class="skills__category reveal-fade-up glass-card">
+              <div class="skills__category-header">
+                <span class="skills__category-icon" aria-hidden="true"
+                  >â¬¡</span
+                >
+                <h3 class="skills__category-title">Front-End</h3>
+              </div>
+              <ul class="skills__list" role="list">
+                <li class="skill-item" data-level="95">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">HTML5</span>
+                    <span class="skill-item__level font-mono">80%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="HTML5: 80%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="90">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">CSS3 & Animações</span>
+                    <span class="skill-item__level font-mono">80%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="CSS3: 80%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="80">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Flexbox & CSS Grid</span>
+                    <span class="skill-item__level font-mono">55%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="55"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Flexbox & Grid: 55%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="75">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Responsividade</span>
+                    <span class="skill-item__level font-mono">55%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="55"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Responsividade: 55%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Back-End -->
+            <div
+              class="skills__category reveal-fade-up glass-card"
+              style="--delay: 0.1s"
+            >
+              <div class="skills__category-header">
+                <span class="skills__category-icon" aria-hidden="true"
+                  >â¬¡</span
+                >
+                <h3 class="skills__category-title">Back-End</h3>
+              </div>
+              <ul class="skills__list" role="list">
+                <li class="skill-item" data-level="75">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Node.js</span>
+                    <span class="skill-item__level font-mono">15%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="15"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Node.js: 15%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="80">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Python</span>
+                    <span class="skill-item__level font-mono">70%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Python: 70%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="78">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Java & POO</span>
+                    <span class="skill-item__level font-mono">58%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="58"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Java: 58%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="70">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">PHP</span>
+                    <span class="skill-item__level font-mono">10%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="10"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="PHP: 10%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Banco de Dados -->
+            <div
+              class="skills__category reveal-fade-up glass-card"
+              style="--delay: 0.2s"
+            >
+              <div class="skills__category-header">
+                <span class="skills__category-icon" aria-hidden="true"
+                  >â¬¡</span
+                >
+                <h3 class="skills__category-title">Banco de Dados</h3>
+              </div>
+              <ul class="skills__list" role="list">
+                <li class="skill-item" data-level="75">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">MySQL</span>
+                    <span class="skill-item__level font-mono">25%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="MySQL: 25%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="70">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">APIs REST</span>
+                    <span class="skill-item__level font-mono">10%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="10"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="APIs REST: 10%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="72">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Estrutura de Dados</span>
+                    <span class="skill-item__level font-mono">55%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="72"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Estrutura de Dados: 72%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Ferramentas & UI/UX -->
+            <div
+              class="skills__category reveal-fade-up glass-card"
+              style="--delay: 0.3s"
+            >
+              <div class="skills__category-header">
+                <span class="skills__category-icon" aria-hidden="true"
+                  >â¬¡</span
+                >
+                <h3 class="skills__category-title">Ferramentas & UI/UX</h3>
+              </div>
+              <ul class="skills__list" role="list">
+                <li class="skill-item" data-level="88">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Git & GitHub</span>
+                    <span class="skill-item__level font-mono">88%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="88"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Git: 88%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="85">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name"
+                      >Semântica & Acessibilidade</span
+                    >
+                    <span class="skill-item__level font-mono">85%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Semântica: 85%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+                <li class="skill-item" data-level="82">
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Lógica de Programação</span>
+                    <span class="skill-item__level font-mono">82%</span>
+                  </div>
+                  <div
+                    class="skill-item__bar"
+                    role="progressbar"
+                    aria-valuenow="82"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Lógica: 82%"
+                  >
+                    <div class="skill-item__fill"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tech Pills -->
+          <div class="tech-cloud reveal-fade-up">
+            <p class="tech-cloud__label font-mono">Tecnologias no arsenal:</p>
+            <div class="tech-cloud__pills" role="list">
+              <span class="tech-pill" role="listitem">HTML5</span>
+              <span class="tech-pill" role="listitem">CSS3</span>
+              <span class="tech-pill" role="listitem">JavaScript</span>
+              <span class="tech-pill" role="listitem">Python</span>
+              <span class="tech-pill" role="listitem">Java</span>
+              <span class="tech-pill" role="listitem">Git</span>
+              <span class="tech-pill" role="listitem">GitHub</span>
+              <span class="tech-pill" role="listitem">CSS Grid</span>
+              <span class="tech-pill" role="listitem">POO</span>
+              <span class="tech-pill" role="listitem">Responsividade</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="projects section"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-header reveal-fade-up">
+            <span class="section-label font-mono">03 / Projetos</span>
+            <h2 class="section-title" id="projects-title">
+              Trabalhos em Destaque
+            </h2>
+            <p class="section-desc">
+              Projetos reais que demonstram técnica, criatividade e
+              comprometimento com qualidade.
+            </p>
+          </div>
+
+          <div class="projects__grid">
+            <!-- Project 1: Cordel -->
+            <article
+              class="project-card reveal-fade-up"
+              data-type="featured"
+              aria-label="Projeto Cordel"
+            >
+              <div class="project-card__visual">
+                <div class="project-card__thumb project-card__thumb--cordel">
+                  <span class="project-card__thumb-label font-mono">01</span>
+                </div>
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-links">
+                    <a
+                      href="https://github.com/Rafa-code0/projeto-cordel"
+                      class="project-card__icon-link"
+                      aria-label="Ver no GitHub"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.74.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://github.com/Rafa-code0/projeto-cordel"
+                      class="project-card__icon-link"
+                      aria-label="Ver demo ao vivo"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <polyline
+                          points="15,3 21,3 21,9"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <line
+                          x1="10"
+                          y1="14"
+                          x2="21"
+                          y2="3"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags" aria-label="Tecnologias usadas">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Responsivo</span>
+                </div>
+                <h3 class="project-card__title">Projeto Cordel</h3>
+                <p class="project-card__desc">
+                  Site temático de Literatura de Cordel com design autoral,
+                  tipografia elaborada e apresentação cultural cuidadosa. Layout
+                  responsivo e semântica impecável.
+                </p>
+                <div class="project-card__footer">
+                  <a
+                    href="https://github.com/Rafa-code0/projeto-cordel"
+                    target="_blank"
+                    class="project-card__link"
+                    aria-label="Ver projeto Cordel no GitHub"
+                    >GitHub <span aria-hidden="true">→</span></a
+                  >
+                  <a
+                    href="https://github.com/Rafa-code0/projeto-cordel"
+                    target="_blank"
+                    class="project-card__link project-card__link--demo"
+                    aria-label="Demo do projeto Cordel"
+                    >Demo <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Android -->
+            <article
+              class="project-card reveal-fade-up"
+              style="--delay: 0.1s"
+              aria-label="Projeto Android"
+            >
+              <div class="project-card__visual">
+                <div class="project-card__thumb project-card__thumb--android">
+                  <span class="project-card__thumb-label font-mono">02</span>
+                </div>
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-links">
+                    <a
+                      href="https://github.com/Rafa-code0/android-history-page"
+                      class="project-card__icon-link"
+                      aria-label="Ver no GitHub"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.74.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Design</span>
+                </div>
+                <h3 class="project-card__title">Projeto Android</h3>
+                <p class="project-card__desc">
+                  Página temática sobre o mascote Android com design moderno,
+                  animações CSS avançadas e experiência visual cuidadosamente
+                  construída.
+                </p>
+                <div class="project-card__footer">
+                  <a
+                    href="https://github.com/Rafa-code0/android-history-page"
+                    target="_blank"
+                    class="project-card__link"
+                    aria-label="Ver projeto Android no GitHub"
+                    >GitHub <span aria-hidden="true">→</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: IEADIP -->
+            <article
+              class="project-card reveal-fade-up"
+              style="--delay: 0.2s"
+              aria-label="Site Igreja"
+            >
+              <div class="project-card__visual">
+                <div class="project-card__thumb project-card__thumb--church">
+                  <span class="project-card__thumb-label font-mono">03</span>
+                </div>
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-links">
+                    <a
+                      href="https://github.com/Rafa-code0/church-management-system"
+                      class="project-card__icon-link"
+                      aria-label="Ver no GitHub"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.74.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Institucional</span>
+                </div>
+                <h3 class="project-card__title">Site Igreja</h3>
+                <p class="project-card__desc">
+                  Site institucional para a Igreja com
+                  layout responsivo, informações sobre cultos, localização e
+                  identidade visual própria.
+                </p>
+                <div class="project-card__footer">
+                  <a
+                    href="https://github.com/Rafa-code0/church-management-system"
+                    target="_blank"
+                    class="project-card__link"
+                    aria-label="Ver site Igreja no GitHub"
+                    >GitHub <span aria-hidden="true">→</span></a
+                  >
+                  <a
+                    href="https://github.com/Rafa-code0/church-management-system"
+                    target="_blank"
+                    class="project-card__link project-card__link--demo"
+                    >Demo <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Java -->
+            <article
+              class="project-card reveal-fade-up"
+              style="--delay: 0.1s"
+              aria-label="Projetos Java"
+            >
+              <div class="project-card__visual">
+                <div class="project-card__thumb project-card__thumb--java">
+                  <span class="project-card__thumb-label font-mono">04</span>
+                </div>
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-links">
+                    <a
+                      href="https://github.com/Rafa-code0/java-oop-projects"
+                      class="project-card__icon-link"
+                      aria-label="Ver no GitHub"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.74.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">POO</span>
+                  <span class="tag">Algoritmos</span>
+                </div>
+                <h3 class="project-card__title">Projetos Java</h3>
+                <p class="project-card__desc">
+                  Coleção de projetos em Java aplicando Programação Orientada a
+                  Objetos, estruturas de dados, algoritmos e boas práticas de
+                  desenvolvimento backend.
+                </p>
+                <div class="project-card__footer">
+                  <a
+                    href="https://github.com/Rafa-code0/java-oop-projects"
+                    target="_blank"
+                    class="project-card__link"
+                    aria-label="Ver projetos Java no GitHub"
+                    >GitHub <span aria-hidden="true">→</span></a
+                  > 
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5: Python -->
+            <article
+              class="project-card reveal-fade-up"
+              style="--delay: 0.2s"
+              aria-label="Projetos Python"
+            >
+              <div class="project-card__visual">
+                <div class="project-card__thumb project-card__thumb--python">
+                  <span class="project-card__thumb-label font-mono">05</span>
+                </div>
+                <div class="project-card__overlay">
+                  <div class="project-card__overlay-links">
+                    <a
+                      href="https://github.com/Rafa-code0/gerador-de-senhas-python"
+                      target = "blank"
+                      class="project-card__icon-link"
+                      aria-label="Ver no GitHub"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.74.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Scripts</span>
+                  <span class="tag">Automação</span>
+                </div>
+                <h3 class="project-card__title">Projetos Python</h3>
+                <p class="project-card__desc">
+                  Scripts e sistemas em Python para automação, análise e
+                  resolução de problemas, aplicando lógica de programação
+                  avançada e boas práticas.
+                </p>
+                <div class="project-card__footer">
+                  <a
+                    href="https://github.com/Rafa-code0/gerador-de-senhas-python"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-card__link"
+                    aria-label="Ver projetos Python no GitHub"
+                    >GitHub <span aria-hidden="true">→</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6: Em breve -->
+            <article
+              class="project-card project-card--coming reveal-fade-up"
+              style="--delay: 0.3s"
+              aria-label="Projetos em desenvolvimento"
+            >
+              <div class="project-card__visual">
+                <div class="project-card__thumb project-card__thumb--future">
+                  <span class="project-card__thumb-label font-mono">06</span>
+                  <div class="project-card__coming-badge font-mono">
+                    Em breve
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Sistema Web</span>
+                </div>
+                <h3 class="project-card__title">Sistema Web Full Stack</h3>
+                <p class="project-card__desc">
+                  Sistema web completo com Node.js, MySQL e interface premium.
+                  API RESTful, autenticação, dashboard e muito mais.
+                  <em>Em desenvolvimento.</em>
+                </p>
+                <div class="project-card__footer">
+                  <span class="project-card__soon font-mono"
+                    >🔧 Construindo...</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="projects__more reveal-fade-up">
+            <a
+              href="https://github.com/rafa-code0/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--ghost btn--lg magnetic"
+              aria-label="Ver todos os projetos no GitHub"
+            >
+              Ver todos no GitHub →
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="stats section" aria-label="Estatísticas e conquistas">
+        <div class="container">
+          <div class="stats__grid">
+            <div class="stat-card reveal-fade-up glass-card">
+              <span class="stat-card__number" data-target="6" aria-live="polite"
+                >7</span
+              >
+              <span class="stat-card__plus">+</span>
+              <p class="stat-card__label">Projetos Concluídos</p>
+            </div>
+            <div
+              class="stat-card reveal-fade-up glass-card"
+              style="--delay: 0.1s"
+            >
+              <span
+                class="stat-card__number"
+                data-target="16"
+                aria-live="polite"
+                >16</span
+              >
+              <span class="stat-card__plus">+</span>
+              <p class="stat-card__label">Tecnologias Dominadas</p>
+            </div>
+            <div
+              class="stat-card reveal-fade-up glass-card"
+              style="--delay: 0.2s"
+            >
+              <span
+                class="stat-card__number"
+                data-target="500"
+                aria-live="polite"
+                >500</span
+              >
+              <span class="stat-card__plus">+</span>
+              <p class="stat-card__label">Horas de Estudo</p>
+            </div>
+            <div
+              class="stat-card reveal-fade-up glass-card"
+              style="--delay: 0.3s"
+            >
+              <span
+                class="stat-card__number"
+                data-target="100"
+                aria-live="polite"
+                >7</span
+              >
+              <span class="stat-card__plus">+</span>
+              <p class="stat-card__label">Commits no GitHub</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="journey"
+        class="journey section"
+        aria-labelledby="journey-title"
+      >
+        <div class="container">
+          <div class="section-header reveal-fade-up">
+            <span class="section-label font-mono">04 / Jornada</span>
+            <h2 class="section-title" id="journey-title">Minha Evolução</h2>
+            <p class="section-desc">
+              A linha do tempo que me trouxe até aqui — cada passo foi
+              intencional.
+            </p>
+          </div>
+
+          <div
+            class="timeline"
+            role="list"
+            aria-label="Linha do tempo de evolução"
+          >
+            <div class="timeline__item reveal-fade-left" role="listitem">
+              <div class="timeline__marker" aria-hidden="true">
+                <span class="timeline__dot"></span>
+                <span class="timeline__line"></span>
+              </div>
+              <div class="timeline__content glass-card">
+                <span class="timeline__date font-mono">2024</span>
+                <h3 class="timeline__title">O Início</h3>
+                <p class="timeline__desc">
+                  Primeiros contatos com HTML e CSS. A fagulha que acendeu a
+                  paixão por desenvolvimento web e design de interfaces.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="timeline__item timeline__item--right reveal-fade-right"
+              role="listitem"
+            >
+              <div class="timeline__marker" aria-hidden="true">
+                <span class="timeline__dot"></span>
+                <span class="timeline__line"></span>
+              </div>
+              <div class="timeline__content glass-card">
+                <span class="timeline__date font-mono">2024</span>
+                <h3 class="timeline__title">Entrada na Faculdade</h3>
+                <p class="timeline__desc">
+                  Início do curso de Ciência da Computação. Fundamentos sólidos
+                  em algoritmos, lógica e linguagens de programação.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">Algoritmos</span
+                  ><span class="tag">JAVA</span><span class="tag">PYTHON</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__item reveal-fade-left" role="listitem">
+              <div class="timeline__marker" aria-hidden="true">
+                <span class="timeline__dot"></span>
+                <span class="timeline__line"></span>
+              </div>
+              <div class="timeline__content glass-card">
+                <span class="timeline__date font-mono">2025</span>
+                <h3 class="timeline__title">Back-End</h3>
+                <p class="timeline__desc">
+                  Estudo de Java e Python para desenvolvimento backend. Projetos de sistemas e automação, aplicando lógica avançada e boas práticas de programação.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">JAVA</span><span class="tag">PYTHON</span
+                  ><span class="tag">PROGRAMAÇÃO</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="timeline__item timeline__item--right reveal-fade-right"
+              role="listitem"
+            >
+              <div class="timeline__marker" aria-hidden="true">
+                <span class="timeline__dot"></span>
+                <span class="timeline__line"></span>
+              </div>
+              <div class="timeline__content glass-card">
+                <span class="timeline__date font-mono">2026 - HOJE</span>
+                <h3 class="timeline__title">Front-End</h3>
+                <p class="timeline__desc">
+                  inicio do estudo de desenvolvimento front-end. Criação de interfaces, design responsivo e experiência do usuário. O começo da jornada para me tornar um desenvolvedor full stack.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">HTML 5</span><span class="tag">CSS 3</span
+                  ><span class="tag">JAVA SCRIPT</span> 
+                </div>
+              </div> 
+            </div> 
+
+            <div class="timeline__item reveal-fade-left" role="listitem">
+              <div class="timeline__marker" aria-hidden="true">
+                <span class="timeline__dot timeline__dot--active"></span>
+              </div>
+              <div
+                class="timeline__content glass-card timeline__content--active"
+              >
+                <span class="timeline__date font-mono">2027</span>
+                <h3 class="timeline__title">
+                  Full Stack
+                  <span class="pulse-dot" aria-hidden="true"></span>
+                </h3>
+                <p class="timeline__desc">
+                  Desenvolvimento full stack com Node.js, MySQL e React. Construção de sistemas web completos, desde a API até a interface, com foco em performance e experiência do usuário.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">UI/UX</span
+                  ><span class="tag">SISTEMAS WEB</span
+                  ><span class="tag">FULL STACK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="contact section"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <div class="section-header reveal-fade-up">
+            <span class="section-label font-mono">05 / Contato</span>
+            <h2 class="section-title" id="contact-title">
+              Vamos Construir Algo<br /><em>Extraordinário</em>
+            </h2>
+            <p class="section-desc">
+              Aberto a projetos freelance, oportunidades de trabalho e
+              colaborações criativas.
+            </p>
+          </div>
+
+          <div class="contact__grid">
+            <!-- Info Side -->
+            <div class="contact__info reveal-fade-left">
+              <div class="contact__availability glass-card">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Disponível para projetos</strong>
+                  <p class="font-mono">Respondo em até 24 horas</p>
+                </div>
+              </div>
+
+              <div class="contact__channels">
+                <a
+                  href="mailto:rafael@email.com"
+                  class="contact__channel"
+                  aria-label="Enviar email"
+                >
+                  <div class="contact__channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                      <rect
+                        x="2"
+                        y="4"
+                        width="20"
+                        height="16"
+                        rx="2"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="m2 7 10 7 10-7"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact__channel-info">
+                    <span class="contact__channel-label font-mono">Email</span>
+                    <span class="contact__channel-value">rafaelcorsil2006@gmail.com</span>
+                  </div>
+                  <span class="contact__channel-arrow" aria-hidden="true"
+                    >→</span
+                  >
+                </a>
+
+                <a
+                  href="https://github.com/Rafa-code0"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__channel"
+                  aria-label="Ver GitHub"
+                >
+                  <div class="contact__channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.74.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact__channel-info">
+                    <span class="contact__channel-label font-mono">GitHub</span>
+                    <span class="contact__channel-value"
+                      >https://github.com/Rafa-code0</span
+                    >
+                  </div>
+                  <span class="contact__channel-arrow" aria-hidden="true"
+                    >→</span
+                  >
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/rafael-correa-silva/"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__channel"
+                  aria-label="Ver LinkedIn"
+                >
+                  <div class="contact__channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="4"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M7 10v7M7 7v.01"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M11 17v-4a2 2 0 114 0v4M11 10v7"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact__channel-info">
+                    <span class="contact__channel-label font-mono"
+                      >LinkedIn</span
+                    >
+                    <span class="contact__channel-value"
+                      >https://www.linkedin.com/in/rafael-correa-silva/</span
+                    >
+                  </div>
+                  <span class="contact__channel-arrow" aria-hidden="true"
+                    >→</span
+                  >
+                </a>
+              </div>
+            </div>
+
+            <!-- Form Side -->
+            <div class="contact__form-wrap reveal-fade-right">
+              <form
+                class="contact__form glass-card"
+                id="contactForm"
+                aria-label="Formulário de contato"
+                novalidate
+              >
+                <div class="form-group">
+                  <label for="formName" class="form-label">Nome</label>
+                  <input
+                    type="text"
+                    id="formName"
+                    name="name"
+                    class="form-input"
+                    placeholder="Seu nome completo"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formEmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="formEmail"
+                    name="email"
+                    class="form-input"
+                    placeholder="seu@email.com"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formSubject" class="form-label">Assunto</label>
+                  <input
+                    type="text"
+                    id="formSubject"
+                    name="subject"
+                    class="form-input"
+                    placeholder="Sobre o que deseja falar?"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formMessage" class="form-label">Mensagem</label>
+                  <textarea
+                    id="formMessage"
+                    name="message"
+                    class="form-input form-textarea"
+                    placeholder="Descreva seu projeto ou ideia..."
+                    rows="5"
+                    required
+                    aria-required="true"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn--gold btn--full magnetic"
+                  aria-label="Enviar mensagem"
+                >
+                  <span class="form-btn-text">Enviar Mensagem</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M1.5 8h13M9.5 3l4.5 5-4.5 5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="form-feedback"
+                  id="formFeedback"
+                  aria-live="polite"
+                  role="status"
+                ></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <a href="#hero" class="footer__logo" aria-label="Voltar ao topo"
+              >RC</a
+            >
+            <p class="footer__tagline">Desenvolvedor Front-End & UI/UX</p>
+          </div>
+
+          <nav class="footer__nav" aria-label="Navegação do rodapé">
+            <a href="#about" class="footer__link">Sobre</a>
+            <a href="#skills" class="footer__link">Skills</a>
+            <a href="#projects" class="footer__link">Projetos</a>
+            <a href="#contact" class="footer__link">Contato</a>
+            <a href="#certificados" class="footer__link">Certificados</a>
+          </nav>
+
+          <div class="footer__social">
+            <a
+              href="https://github.com/rafa-code0/"
+              target="_blank"
+              rel="noopener"
+              class="footer__social-link"
+              aria-label="GitHub de Rafael Corrêa"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.74.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0112 6.84c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rafael-correa-silva/"
+              target="_blank"
+              rel="noopener"
+              class="footer__social-link"
+              aria-label="LinkedIn de Rafael Corrêa"
+            >
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M7 10v7M7 7v.01"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M11 17v-4a2 2 0 114 0v4M11 10v7"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+          <a
+            href="https://instagram.com/seuusuario"
+            target="_blank"
+            rel="noopener"
+            class="footer__social-link"
+            aria-label="Instagram de Rafael Corrêa"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+              />
+            </svg>
+        </a>  
+
+        <div class="footer__bottom">
+          <p class="footer__copy font-mono">
+            © 2025 Rafael Corrêa — Crafted with precision &amp; passion.
+          </p>
+          <a
+            href="#hero"
+            class="footer__back-top"
+            aria-label="Voltar ao topo da página"
+          >
+            <span class="font-mono">↑ topo</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
